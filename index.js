@@ -14,7 +14,7 @@ global.db_pool = db_M.pool;
 app.set("view engine", "ejs");
 app.set('views', path.join(__dirname, "/views"));
 
-app.use("/CSS1",express.static(path.join(__dirname, "css")));
+app.use("/css",express.static(path.join(__dirname, "css")));
 app.use("/js",express.static(path.join(__dirname, "js")));
 
 global.htmlspecialchars = require('htmlspecialchars');
